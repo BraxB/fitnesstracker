@@ -13,14 +13,12 @@ app.use(express.static("public"));
 app.use(routes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/fitnessTracker",
+  process.env.MONGODB_URI || "mongodb://localhost/workout",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }
 );
-
-app.use("/exercise", express.static(__dirname + "public/exercise"));
 
 app.listen(PORT, () => {
   console.log(`Running on port ${PORT}`);
