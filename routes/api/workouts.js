@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
     });
 });
 
-//creates a new workout
+//creates a new empty workout
 router.post('/', ({body}, res) => {
   db.Workout.create(body)
     .then(dbWorkout => {
@@ -43,5 +43,23 @@ router.put('/:id', (req, res) => {
       res.status(500).json(err);
     })
 })
+
+//get last 7 workouts with duration calculated
+router.get('/range', (req, res) => {
+  db.Workout.aggregate([
+  { $addFields: {
+      totalDuration: { $sum: '$exercises.duration'}
+  }},
+  { $sort: {day: -1}},
+  { $limit: 7},
+  ])
+    .then(dbWorkout => {
+      dbWorkout.reverse();
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.json(err);
+    });
+});
 
 module.exports = router;
