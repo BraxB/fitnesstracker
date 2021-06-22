@@ -30,6 +30,7 @@ No installation necessary.
 <a id='Usage'></a>
 
 Go to the deployed link below:
+
 [Deployed App](https://hidden-wave-39538.herokuapp.com/)
 
 ## Contributing
