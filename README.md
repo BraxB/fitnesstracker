@@ -33,6 +33,8 @@ Go to the deployed link below:
 
 [Deployed App](https://hidden-wave-39538.herokuapp.com/)
 
+To run the app, click add workout to create a new workout or continue workout to edit an existing one. Aggregated workout data can be tracked over a week on the dashboard page provided that Atlas has not paused the data cluster.
+
 ![Screenshot of Deployed App](https://raw.githubusercontent.com/BraxB/fitnesstracker/main/public/screenshot.JPG)
 
 ## Contributing
