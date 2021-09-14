@@ -3,9 +3,9 @@
 
 ## Description
 
-Build a simple Mongoose app to track workouts.
+The goal was to build the backend of a simple Mongoose app to track workouts.
 The app allows users to track both cardio and resistance workouts and view stats on those. 
-This project gave me great practice using Mongoose. I feel very comfortable with aggregation now. 
+This project gave me great practice using Mongoose. I feel very comfortable with aggregation now. These efforts can be seen in the dashboard tab of the app.
 
 ## Table of Contents
 
