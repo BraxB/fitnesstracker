@@ -33,6 +33,8 @@ Go to the deployed link below:
 
 [Deployed App](https://hidden-wave-39538.herokuapp.com/)
 
+![Screenshot of Deployed App](https://raw.githubusercontent.com/BraxB/fitnesstracker/main/public/screenshot.JPG)
+
 ## Contributing
 
 <a id='Contributing'></a>
